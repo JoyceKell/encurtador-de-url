@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "baseUrl": "./src",
+        "skipLibCheck": true,
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "noEmit": false,
@@ -19,5 +20,11 @@
         "resolveJsonModule": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "./node_modules",
+        "./node_modules/*",
+        "./node_modules/@types/node/index.d.ts",
+      ]
 }
